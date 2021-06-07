@@ -16,10 +16,10 @@ class MonnifyHelper {
 
     constructor() {
         this.baseUrl = 'https://sandbox.monnify.com/api/';
-        this.username = 'MK_TEST_SSJHF4V9V9';
-        this.password = '3GC7GC7MK3FTX8SZ9HSLUBFK3HM864B4';
-        this.contractCode = 8872524455;
-        this.accountPrefix = 'coinchain';
+        this.username = process.env.MONNIFY_USERNAME;
+        this.password = process.env.MONNIFY_PASSWORD;
+        this.contractCode = process.env.MONNIFY_CONTRACT_CODE;
+        this.accountPrefix = process.env.MONNIFY_ACCOUNT_PREFIX;
         this.currency = "NGN";
     }
 
